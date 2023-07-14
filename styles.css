@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.container  {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 50px;
+}
+
+#input-el {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#btn-el {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: #4385f5;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;    
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.3s;
+}
+
+#btn-el:hover {
+    opacity: 0.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    min-height: 50px;
+    text-align: left;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    display: grid;
+    grid-gap: 15px 1px;
+    grid-template-columns: 30px 200px 50px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+                "check para date"
+                ".     edit delete";
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.date {
+    color: #d7d7d7;
+}
+
+li button {
+    width: 50px;
+    justify-self: end;
+    height: 25px;
+    align-self: end;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#check {
+    height: 20px;
+}
+
+#edit {
+    background-color: #65c97a;
+    grid-area: edit;
+}
+
+#del {
+    background-color: #d75946;
+    grid-area: delete;
+}
+
